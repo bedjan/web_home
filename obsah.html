@@ -14,11 +14,24 @@
 <link rel="import" href="https://rawcdn.githack.com/bedjan/web_home/master/menu.html">
 <link rel="import" href="https://rawcdn.githack.com/bedjan/web_home/master/body.html">
 <link rel="import" href="https://rawcdn.githack.com/bedjan/web_home/master/foot.html">
+
+<script>
+window.onload=function(){function a(a,b){var c=/^(?:file):/,d=new XMLHttpRequest,e=0;d.onreadystatechange=function()
+
+{4==d.readyState&&(e=d.status),c.test(location.href)&&d.responseText&&(e=200),4==d.readyState&&200==e&&
+
+(a.outerHTML=d.responseText)};try{d.open("GET",b,!0),d.send()}catch(f){}}var b,c=document.getElementsByTagName("*");for(b in 
+
+c)c[b].hasAttribute&&c[b].hasAttribute("data-include")&&a(c[b],c[b].getAttribute("data-include"))};
+</script> 
+
+
 </head>
 
 
 <!-- menu.html --> 
-<div w3-include-html="https://rawcdn.githack.com/bedjan/web_home/master/menu.html"></div> 
+
+<div data-include="https://rawcdn.githack.com/bedjan/web_home/master/menu.html"></div> 
 <!-- <iframe src="https://rawcdn.githack.com/bedjan/web_home/master/menu.html" align="left" frameborder="0" width="100%" 
 
 height="3000" scrolling="yes" target="_parent">https://github.com/bedjan/web_home/raw/master/menu.html</iframe> -->
@@ -30,7 +43,7 @@ height="3000" scrolling="yes" target="_parent">https://github.com/bedjan/web_hom
 <!-- body.html --> 
 
 
-<div w3-include-html="https://rawcdn.githack.com/bedjan/web_home/master/body.html"></div> 
+<div data-include="https://rawcdn.githack.com/bedjan/web_home/master/body.html"></div> 
 <!-- <iframe src="https://rawcdn.githack.com/bedjan/web_home/master/body.html" align="left" frameborder="0" width="100%" 
 
 height="3000" scrolling="yes" target="_parent">https://github.com/bedjan/web_home/raw/master/body.html</iframe> -->
@@ -42,7 +55,7 @@ height="3000" scrolling="yes" target="_parent">https://github.com/bedjan/web_hom
 
 <!-- foot.html --> 
 
-<div w3-include-html="https://rawcdn.githack.com/bedjan/web_home/master/foot.html"></div> 
+<div data-include="https://rawcdn.githack.com/bedjan/web_home/master/foot.html"></div> 
 <!--  <iframe src="https://rawcdn.githack.com/bedjan/web_home/master/foot.html" align="left" frameborder="0" width="100%" 
 
 height="3000" scrolling="yes" target="_parent">https://github.com/bedjan/web_home/raw/master/foot.html</iframe> -->
