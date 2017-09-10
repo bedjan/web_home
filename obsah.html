@@ -362,15 +362,19 @@ important}
 
 <div class="w3-third">
 
-<div id="ikal-kalendar">Sestavuji aktuální <a href="http://www.ikal.cz/">kalendář</a> ...</div>
-<script type="text/javascript" src="https://www.ikal.cz/widget/kalendar.js.php"></script>
+<a href="http://www.ikal.cz/" id="ikal-cas">přesný čas</a>
+<script type="text/javascript" src="https://www.ikal.cz/widget/presny-cas.js.php"></script>
 <script type="text/javascript">
-iKAL_KALENDAR.init('ccal: 000000, ctxt: 999999, ctime: EEEEEE, csec: BBBBBB, htime: 11, hsec: 10, hcal: 26, htxt: 12, 
-
-showsec: 1, showt: 1, shown: 1, showw: 1, bhd: CC0000, bkal: FFFFFF, btime: 999999');
-iKAL_KALENDAR.show();
+iKAL_CAS.init('ctime: 000000, csec: 666666, htime: 22, hsec: 10, showsec: 1 ');
+iKAL_CAS.show();
 </script>
-
+<br />
+<a href="http://www.ikal.cz/" id="ikal-jmena">kalendář jmen</a>
+<script type="text/javascript" src="https://www.ikal.cz/widget/kalendar-jmen.js.php"></script>
+<script type="text/javascript">
+iKAL_JMENA.init('ctext: 000000, htext: 18, showcount: 3 ');
+iKAL_JMENA.show();
+</script>
 </div>
 
 
