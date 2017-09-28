@@ -509,6 +509,21 @@ okně</h5></a>
 <div class="w3-container">
 <h5><a href="http://free.allforms.mailjol.net/u/e0857779.php" target="_blank">@Poslat emailem vzkaz -> zobrazí se v dalším
 okně</a></h5>
+
+<p>© Jan Bednář. All rights reserved. <a href="https://github.com/bedjan/web_home/blob/master/w3.css"
+target="_blank">@CSS</a> with <a href="https://github.com/bedjan/web_home/blob/master/obsah.html"
+target="_blank">@Editace webu</a>.</p>
+</div>
+<a name="bottom"></a>
+  
+  <?php if($_GET["heslo"] != "opicak"): ?>
+<!--přihlaąovací formulář -->
+<form>
+Zadej heslo pro vstup k obsahu: <input type="password" name="heslo">
+<input type="submit">
+</form>
+
+<? else: ?>
 <p>
 <a href="https://github.com/bedjan/radia/raw/master/radia_online.m3u"
 target="_blank">@radia</a> <a href="https://github.com/bedjan/difm/raw/master/difm.m3u"
@@ -525,10 +540,7 @@ target="_blank">@tv</a>
 
 
 </p>
-<p>© Jan Bednář. All rights reserved. <a href="https://github.com/bedjan/web_home/blob/master/w3.css"
-target="_blank">@CSS</a> with <a href="https://github.com/bedjan/web_home/blob/master/obsah.html"
-target="_blank">@Editace webu</a>.</p>
-</div>
-<a name="bottom"></a>
+  
+<? endif ?>
 </body>
 </html> 
