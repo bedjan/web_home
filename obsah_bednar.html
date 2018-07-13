@@ -266,6 +266,29 @@ important}
 .w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
 .w3-border-grey,.w3-hover-border-grey:hover,.w3-border-gray,.w3-hover-border-gray:hover{border-color:#bbb!important}
 </style>
+  
+   <script>  
+        // get markdown content  
+        var body_location = 'https://github.com/bedjan/web_home/raw/master/poznamky.md';
+                
+        function getText(myUrl){
+            var result = null;
+            $.ajax( { url: myUrl, 
+                      type: 'get', 
+                      dataType: 'html',
+                      async: false,
+                      success: function(data) { result = data; } 
+                    }
+            );
+            FileReady = true;
+            return result;
+        }
+        var markdown_source = getText(body_location);
+        // convert markdown to html
+        var output = markdown.toHTML( markdown_source );
+        document.write(output);
+      </script>
+  
 <body>
 <a name="top"></a>
 <div style="position: fixed;bottom:7%;right:5%;width: auto;background-color:grey;color:#ffffff">
