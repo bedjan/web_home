@@ -15,6 +15,8 @@ https://raw.githubusercontent.com/bedjan/web_home/master/obsah_bednar.html
 
 # index.php
 
+```php
+
 <?php
 
 $url = file_get_contents
@@ -23,3 +25,5 @@ $url = file_get_contents
 echo $url; 
 
 ?>
+
+```ruby
