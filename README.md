@@ -15,6 +15,8 @@ https://raw.githubusercontent.com/bedjan/web_home/master/obsah_bednar.html
 
 # index.php
 
+zdroj: https://stackoverflow.com/questions/819182/how-do-i-get-the-html-code-of-a-web-page-in-php
+
 ```php
 
 <?php
