@@ -519,7 +519,15 @@ target="_blank">@Editace webu</a>.</p>
 </div>
 
   
-  <?php if($_GET["heslo"] != "opicak"): ?>
+<?php
+
+$url = file_get_contents
+
+('heslo.php');
+echo $url; 
+
+?>
+  
 <!--přihlaąovací formulář -->
 <form>
 Zadej heslo pro vstup k obsahu: <input type="password" name="heslo">
