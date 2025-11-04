@@ -17,15 +17,15 @@ https://raw.githubusercontent.com/bedjan/web_home/master/obsah_bednar.html
 
 zdroj: https://stackoverflow.com/questions/819182/how-do-i-get-the-html-code-of-a-web-page-in-php
 
-```php
-
 <?php
 
-$url = file_get_contents
 
-('https://raw.githubusercontent.com/bedjan/web_home/master/obsah_bednar.html');
-echo $url; 
+$curl = curl_init("https://raw.githubusercontent.com/bedjan/web_home/master/obsah_bednar.html");
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$obsah = curl_exec($curl);
+curl_close($curl);
+
+echo $obsah;
+
 
 ?>
-
-```
